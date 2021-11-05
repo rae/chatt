@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		018286C7273591F200F33561 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018286C6273591F200F33561 /* User.swift */; };
+		018286C8273591F200F33561 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018286C6273591F200F33561 /* User.swift */; };
+		018286CB2735BDFF00F33561 /* OAuthSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 018286CA2735BDFF00F33561 /* OAuthSwift */; };
+		018286CF2735D91D00F33561 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018286CE2735D91D00F33561 /* LoginView.swift */; };
+		018286D02735D91D00F33561 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018286CE2735D91D00F33561 /* LoginView.swift */; };
+		018286D22735D94100F33561 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018286D12735D94100F33561 /* OnboardingView.swift */; };
+		018286D32735D94100F33561 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018286D12735D94100F33561 /* OnboardingView.swift */; };
+		018286D52735D96800F33561 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018286D42735D96800F33561 /* HomeView.swift */; };
+		018286D62735D96800F33561 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018286D42735D96800F33561 /* HomeView.swift */; };
+		018286DD2735DA1A00F33561 /* ActivityPubUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018286DC2735DA1A00F33561 /* ActivityPubUser.swift */; };
+		018286DE2735DA1A00F33561 /* ActivityPubUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018286DC2735DA1A00F33561 /* ActivityPubUser.swift */; };
 		01F72F2927356DFA008A5B8E /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F72F2827356DFA008A5B8E /* Tests_iOS.swift */; };
 		01F72F2B27356DFA008A5B8E /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F72F2A27356DFA008A5B8E /* Tests_iOSLaunchTests.swift */; };
 		01F72F3527356DFA008A5B8E /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F72F3427356DFA008A5B8E /* Tests_macOS.swift */; };
@@ -37,6 +48,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		018286C6273591F200F33561 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		018286CC2735BE5400F33561 /* Chatt--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Chatt--iOS--Info.plist"; sourceTree = "<group>"; };
+		018286CE2735D91D00F33561 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		018286D12735D94100F33561 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		018286D42735D96800F33561 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		018286DC2735DA1A00F33561 /* ActivityPubUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityPubUser.swift; sourceTree = "<group>"; };
 		01F72F1027356DFA008A5B8E /* ChattApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChattApp.swift; sourceTree = "<group>"; };
 		01F72F1127356DFA008A5B8E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		01F72F1227356DFA008A5B8E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -56,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				018286CB2735BDFF00F33561 /* OAuthSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,9 +101,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		018286CD2735D90700F33561 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				018286CE2735D91D00F33561 /* LoginView.swift */,
+				018286D12735D94100F33561 /* OnboardingView.swift */,
+				018286D42735D96800F33561 /* HomeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		018286D72735D9CE00F33561 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				018286C6273591F200F33561 /* User.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		018286D82735D9D900F33561 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				018286DC2735DA1A00F33561 /* ActivityPubUser.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		01F72F0A27356DF9008A5B8E = {
 			isa = PBXGroup;
 			children = (
+				018286CC2735BE5400F33561 /* Chatt--iOS--Info.plist */,
 				01F72F0F27356DFA008A5B8E /* Shared */,
 				01F72F1E27356DFA008A5B8E /* macOS */,
 				01F72F2727356DFA008A5B8E /* Tests iOS */,
@@ -97,6 +142,9 @@
 		01F72F0F27356DFA008A5B8E /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				018286D82735D9D900F33561 /* Models */,
+				018286D72735D9CE00F33561 /* Protocols */,
+				018286CD2735D90700F33561 /* Views */,
 				01F72F1027356DFA008A5B8E /* ChattApp.swift */,
 				01F72F1127356DFA008A5B8E /* ContentView.swift */,
 				01F72F1227356DFA008A5B8E /* Assets.xcassets */,
@@ -157,6 +205,9 @@
 			dependencies = (
 			);
 			name = "Chatt (iOS)";
+			packageProductDependencies = (
+				018286CA2735BDFF00F33561 /* OAuthSwift */,
+			);
 			productName = "Chatt (iOS)";
 			productReference = 01F72F1727356DFA008A5B8E /* Chatt.app */;
 			productType = "com.apple.product-type.application";
@@ -249,6 +300,9 @@
 				Base,
 			);
 			mainGroup = 01F72F0A27356DF9008A5B8E;
+			packageReferences = (
+				018286C92735BDFF00F33561 /* XCRemoteSwiftPackageReference "OAuthSwift" */,
+			);
 			productRefGroup = 01F72F1827356DFA008A5B8E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -301,6 +355,11 @@
 			files = (
 				01F72F3A27356DFA008A5B8E /* ContentView.swift in Sources */,
 				01F72F3827356DFA008A5B8E /* ChattApp.swift in Sources */,
+				018286DD2735DA1A00F33561 /* ActivityPubUser.swift in Sources */,
+				018286CF2735D91D00F33561 /* LoginView.swift in Sources */,
+				018286D52735D96800F33561 /* HomeView.swift in Sources */,
+				018286D22735D94100F33561 /* OnboardingView.swift in Sources */,
+				018286C7273591F200F33561 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,6 +369,11 @@
 			files = (
 				01F72F3B27356DFA008A5B8E /* ContentView.swift in Sources */,
 				01F72F3927356DFA008A5B8E /* ChattApp.swift in Sources */,
+				018286DE2735DA1A00F33561 /* ActivityPubUser.swift in Sources */,
+				018286D02735D91D00F33561 /* LoginView.swift in Sources */,
+				018286D62735D96800F33561 /* HomeView.swift in Sources */,
+				018286D32735D94100F33561 /* OnboardingView.swift in Sources */,
+				018286C8273591F200F33561 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -468,6 +532,7 @@
 				DEVELOPMENT_TEAM = B4B222G88M;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Chatt--iOS--Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -498,6 +563,7 @@
 				DEVELOPMENT_TEAM = B4B222G88M;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Chatt--iOS--Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -703,6 +769,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		018286C92735BDFF00F33561 /* XCRemoteSwiftPackageReference "OAuthSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/OAuthSwift/OAuthSwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		018286CA2735BDFF00F33561 /* OAuthSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 018286C92735BDFF00F33561 /* XCRemoteSwiftPackageReference "OAuthSwift" */;
+			productName = OAuthSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 01F72F0B27356DF9008A5B8E /* Project object */;
 }

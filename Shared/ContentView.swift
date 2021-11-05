@@ -8,9 +8,16 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var user: User = ActivityPubUser()
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        switch user.state {
+        case .onboarding:
+            OnboardingView()
+        case .loggedOut:
+            LoginView()
+        default:
+            HomeView()
+        }
     }
 }
 
