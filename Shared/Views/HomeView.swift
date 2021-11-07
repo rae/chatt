@@ -8,24 +8,17 @@
 import SwiftUI
 
 struct HomeView: View {
-    @State private var selection: String?
-
-    var messages: [MockMessage] = []
+    var messages: [MockMessage] = [
+        MockMessage(
+            text: "A Mock messages test things out!",
+            userid: "tim",
+            avatar: Image(systemName: "person")
+        )
+    ]
 
     var body: some View {
         NavigationView {
-            List(messages, id: \.self, selection: $selection) {
-                Text($0.username)
-                Text($0.date.description)
-                $0.avatar
-                Text($0.text)
-            }
-            .navigationTitle("Home")
-            #if os(iOS)
-            .toolbar {
-                EditButton()
-            }
-            #endif
+            MessageView(messages: messages)
         }
         Text("Home view")
             .padding()
@@ -39,11 +32,9 @@ struct HomeView_Previews: PreviewProvider {
                 MockMessage(
                     text: "A Mock messages test things out!",
                     userid: "tim",
-                    avatar: Image(systemName: "person"))
+                    avatar: Image(systemName: "person")
+                )
             ]
         )
-            .previewLayout(.device)
-            .previewInterfaceOrientation(.portrait)
-            .previewDevice("iPhone 11")
     }
 }
