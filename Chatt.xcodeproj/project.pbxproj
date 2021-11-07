@@ -18,6 +18,10 @@
 		018286D62735D96800F33561 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018286D42735D96800F33561 /* HomeView.swift */; };
 		018286DD2735DA1A00F33561 /* ActivityPubUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018286DC2735DA1A00F33561 /* ActivityPubUser.swift */; };
 		018286DE2735DA1A00F33561 /* ActivityPubUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018286DC2735DA1A00F33561 /* ActivityPubUser.swift */; };
+		01D0ADC62738562000DDA0A7 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D0ADC52738562000DDA0A7 /* Message.swift */; };
+		01D0ADC72738562000DDA0A7 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D0ADC52738562000DDA0A7 /* Message.swift */; };
+		01D0ADC92738657700DDA0A7 /* MockMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D0ADC82738657700DDA0A7 /* MockMessage.swift */; };
+		01D0ADCA2738657700DDA0A7 /* MockMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D0ADC82738657700DDA0A7 /* MockMessage.swift */; };
 		01F72F2927356DFA008A5B8E /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F72F2827356DFA008A5B8E /* Tests_iOS.swift */; };
 		01F72F2B27356DFA008A5B8E /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F72F2A27356DFA008A5B8E /* Tests_iOSLaunchTests.swift */; };
 		01F72F3527356DFA008A5B8E /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F72F3427356DFA008A5B8E /* Tests_macOS.swift */; };
@@ -54,6 +58,8 @@
 		018286D12735D94100F33561 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		018286D42735D96800F33561 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		018286DC2735DA1A00F33561 /* ActivityPubUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityPubUser.swift; sourceTree = "<group>"; };
+		01D0ADC52738562000DDA0A7 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		01D0ADC82738657700DDA0A7 /* MockMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockMessage.swift; sourceTree = "<group>"; };
 		01F72F1027356DFA008A5B8E /* ChattApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChattApp.swift; sourceTree = "<group>"; };
 		01F72F1127356DFA008A5B8E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		01F72F1227356DFA008A5B8E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -114,6 +120,7 @@
 		018286D72735D9CE00F33561 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				01D0ADC52738562000DDA0A7 /* Message.swift */,
 				018286C6273591F200F33561 /* User.swift */,
 			);
 			path = Protocols;
@@ -123,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				018286DC2735DA1A00F33561 /* ActivityPubUser.swift */,
+				01D0ADC82738657700DDA0A7 /* MockMessage.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -358,6 +366,8 @@
 				018286DD2735DA1A00F33561 /* ActivityPubUser.swift in Sources */,
 				018286CF2735D91D00F33561 /* LoginView.swift in Sources */,
 				018286D52735D96800F33561 /* HomeView.swift in Sources */,
+				01D0ADC62738562000DDA0A7 /* Message.swift in Sources */,
+				01D0ADC92738657700DDA0A7 /* MockMessage.swift in Sources */,
 				018286D22735D94100F33561 /* OnboardingView.swift in Sources */,
 				018286C7273591F200F33561 /* User.swift in Sources */,
 			);
@@ -372,6 +382,8 @@
 				018286DE2735DA1A00F33561 /* ActivityPubUser.swift in Sources */,
 				018286D02735D91D00F33561 /* LoginView.swift in Sources */,
 				018286D62735D96800F33561 /* HomeView.swift in Sources */,
+				01D0ADC72738562000DDA0A7 /* Message.swift in Sources */,
+				01D0ADCA2738657700DDA0A7 /* MockMessage.swift in Sources */,
 				018286D32735D94100F33561 /* OnboardingView.swift in Sources */,
 				018286C8273591F200F33561 /* User.swift in Sources */,
 			);
